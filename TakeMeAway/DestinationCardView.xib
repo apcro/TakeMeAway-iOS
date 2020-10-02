@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Catamaran-ExtraBold.ttf">
+            <string>Catamaran-ExtraBold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+        <array key="weathericonsregular.ttf">
+            <string>WeatherIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DestinationCardView" customModule="TakeMeAway" customModuleProvider="target">
+            <connections>
+                <outlet property="cityLabel" destination="kuC-Lo-teH" id="SZC-uE-uOI"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ceg-8B-0Xg"/>
+                <outlet property="countryLabel" destination="j3k-s3-0dg" id="lqE-g7-svx"/>
+                <outlet property="descriptionLabel" destination="I4H-Lh-azR" id="4HO-U6-q5v"/>
+                <outlet property="hotelIconView" destination="afh-9Z-SpX" id="QKp-b3-SMI"/>
+                <outlet property="hotelPrice" destination="FRM-fC-aN7" id="Yzz-ut-b2U"/>
+                <outlet property="imageView" destination="c7r-JD-HJz" id="7uD-EY-5ef"/>
+                <outlet property="planeIconView" destination="fKt-GH-ITc" id="FxN-3d-pqS"/>
+                <outlet property="priceLabel" destination="Epy-a6-Q1n" id="rEJ-kO-xfq"/>
+                <outlet property="saveIcon" destination="Khi-Pe-Ll0" id="jp3-px-7Qx"/>
+                <outlet property="weatherdescription" destination="iv6-k5-RnN" id="nZT-Or-jH9"/>
+                <outlet property="weathericon" destination="iog-3b-7mm" id="JhM-Wf-9Vw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c7r-JD-HJz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sp0-Qb-di4" userLabel="ShadeView" customClass="GradientView" customModule="TakeMeAway" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <viewLayoutGuide key="safeArea" id="5Oe-Bh-PV1"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3k-s3-0dg">
+                    <rect key="frame" x="16" y="428" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="U7s-cT-aso"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Catamaran-ExtraBold" family="Catamaran" pointSize="19"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.7843137255" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuC-Lo-teH">
+                    <rect key="frame" x="16" y="449" width="70" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="O4k-6p-Tlc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Catamaran-ExtraBold" family="Catamaran" pointSize="39"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="w" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iog-3b-7mm">
+                    <rect key="frame" x="16" y="460" width="11" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="gGz-qr-Xpt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-k5-RnN">
+                    <rect key="frame" x="27" y="493" width="129" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="cgL-Gw-dAx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4H-Lh-azR">
+                    <rect key="frame" x="16" y="518" width="343" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="V87-Ay-T5l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="12"/>
+                    <color key="textColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic2_takeoffLO" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-GH-ITc" userLabel="planeIcon">
+                    <rect key="frame" x="276" y="634" width="25" height="25"/>
+                    <color key="tintColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ccb-dO-PWX"/>
+                        <constraint firstAttribute="height" constant="25" id="huc-Pi-Htd"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€999 - ¢999pn" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRM-fC-aN7" userLabel="hotelPriceLabel">
+                    <rect key="frame" x="249" y="0.0" width="118" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="HF3-3c-E4z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                    <color key="textColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic2_hotel_info" translatesAutoresizingMaskIntoConstraints="NO" id="afh-9Z-SpX" userLabel="hotelIcon">
+                    <rect key="frame" x="216" y="-2" width="25" height="25"/>
+                    <color key="tintColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="lcO-OH-Noh"/>
+                        <constraint firstAttribute="height" constant="25" id="yy6-BW-ipA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€999pp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epy-a6-Q1n">
+                    <rect key="frame" x="305" y="638" width="62" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Pps-Yb-BWb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="17"/>
+                    <color key="textColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favorite_border_white_24dp" translatesAutoresizingMaskIntoConstraints="NO" id="Khi-Pe-Ll0" userLabel="saveicon">
+                    <rect key="frame" x="327" y="29" width="32" height="32"/>
+                    <color key="tintColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ENV-ZI-twf"/>
+                        <constraint firstAttribute="width" constant="32" id="xh9-Ry-eg1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I4H-Lh-azR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="0G1-V9-APt"/>
+                <constraint firstItem="iv6-k5-RnN" firstAttribute="leading" secondItem="iog-3b-7mm" secondAttribute="trailing" id="12e-4W-yDH"/>
+                <constraint firstItem="c7r-JD-HJz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1n5-Wf-z5c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Epy-a6-Q1n" secondAttribute="bottom" constant="8" id="3Od-9e-vEc"/>
+                <constraint firstItem="c7r-JD-HJz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="3kK-Oz-Zrn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Khi-Pe-Ll0" secondAttribute="trailing" constant="16" id="4uX-cw-jMq"/>
+                <constraint firstItem="sp0-Qb-di4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="BeM-HT-wJt"/>
+                <constraint firstItem="j3k-s3-0dg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="L2F-6j-PPu"/>
+                <constraint firstItem="sp0-Qb-di4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="O8m-B5-sLW"/>
+                <constraint firstItem="iog-3b-7mm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Szh-iM-pou"/>
+                <constraint firstItem="FRM-fC-aN7" firstAttribute="centerY" secondItem="afh-9Z-SpX" secondAttribute="centerY" id="Tmo-2r-lmT"/>
+                <constraint firstItem="Khi-Pe-Ll0" firstAttribute="top" secondItem="FRM-fC-aN7" secondAttribute="bottom" constant="8" id="URI-2m-Nr9"/>
+                <constraint firstItem="sp0-Qb-di4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VTN-OU-5S8"/>
+                <constraint firstItem="Epy-a6-Q1n" firstAttribute="leading" secondItem="fKt-GH-ITc" secondAttribute="trailing" constant="4" id="X1k-tY-FuK"/>
+                <constraint firstItem="c7r-JD-HJz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Yx3-ZX-vfA"/>
+                <constraint firstItem="fKt-GH-ITc" firstAttribute="top" secondItem="I4H-Lh-azR" secondAttribute="bottom" id="ZJV-5s-Hpd"/>
+                <constraint firstItem="kuC-Lo-teH" firstAttribute="top" secondItem="j3k-s3-0dg" secondAttribute="bottom" id="ZvE-Cj-0te"/>
+                <constraint firstAttribute="trailing" secondItem="FRM-fC-aN7" secondAttribute="trailing" constant="8" id="egi-hz-fCv"/>
+                <constraint firstItem="I4H-Lh-azR" firstAttribute="top" secondItem="iv6-k5-RnN" secondAttribute="bottom" id="iBo-rk-bMu"/>
+                <constraint firstItem="FRM-fC-aN7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ljr-Ta-dd1"/>
+                <constraint firstItem="kuC-Lo-teH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="mSC-Ib-bi2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I4H-Lh-azR" secondAttribute="trailing" constant="16" id="pzQ-Wc-uvT"/>
+                <constraint firstItem="FRM-fC-aN7" firstAttribute="leading" secondItem="afh-9Z-SpX" secondAttribute="trailing" constant="8" id="sCj-CX-Upu"/>
+                <constraint firstItem="c7r-JD-HJz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sSF-zE-2mI"/>
+                <constraint firstItem="iv6-k5-RnN" firstAttribute="top" secondItem="kuC-Lo-teH" secondAttribute="bottom" id="uUS-4y-ZiS"/>
+                <constraint firstItem="fKt-GH-ITc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-8" id="wut-zp-Cqy"/>
+                <constraint firstAttribute="trailing" secondItem="Epy-a6-Q1n" secondAttribute="trailing" constant="8" id="y6n-GP-pFG"/>
+                <constraint firstItem="sp0-Qb-di4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="zHJ-uV-hWu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic2_hotel_info" width="33" height="33"/>
+        <image name="ic2_takeoffLO" width="33" height="33"/>
+        <image name="ic_favorite_border_white_24dp" width="25" height="25"/>
+    </resources>
+</document>

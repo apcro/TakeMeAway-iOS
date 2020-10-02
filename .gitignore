@@ -1,0 +1,11 @@
+# Mac
+.DS_Store
+
+# Xcode
+
+## User settings
+xcuserdata/
+TakeMeAway_Signing_Certificate.p12
+
+# Cocoapods
+Pods

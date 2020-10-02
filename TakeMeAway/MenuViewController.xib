@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="TakeMeAway" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="oQI-FW-23o" id="bsg-bX-9Gd"/>
+                <outlet property="emailLabel" destination="hTt-YN-211" id="yk5-fA-P1a"/>
+                <outlet property="nameLabel" destination="toP-Mb-l50" id="APM-6H-Kj0"/>
+                <outlet property="tableView" destination="G2j-Cg-hwO" id="akL-Zk-1qu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8w-8W-EBW" userLabel="Blue Shade View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    <color key="backgroundColor" red="0.0078431372550000003" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="31a-mX-SpD"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-zT-3jq" userLabel="Profile Stack View">
+                    <rect key="frame" x="20" y="55" width="335" height="108"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic2_profile" translatesAutoresizingMaskIntoConstraints="NO" id="oQI-FW-23o">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="duH-7M-DAf"/>
+                                <constraint firstAttribute="width" constant="50" id="jLO-Xv-zkf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toP-Mb-l50">
+                            <rect key="frame" x="0.0" y="65" width="335" height="14.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTt-YN-211">
+                            <rect key="frame" x="0.0" y="94.5" width="335" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.4549019608" green="0.80000000000000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="toP-Mb-l50" firstAttribute="width" secondItem="lGA-zT-3jq" secondAttribute="width" id="Q1G-MC-jdK"/>
+                        <constraint firstItem="hTt-YN-211" firstAttribute="width" secondItem="lGA-zT-3jq" secondAttribute="width" id="oYd-8w-kVZ"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-Cg-hwO">
+                    <rect key="frame" x="0.0" y="180" width="375" height="487"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexColor" red="0.0078431372550000003" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="G2j-Cg-hwO" secondAttribute="bottom" id="1x0-U1-ikK"/>
+                <constraint firstItem="G2j-Cg-hwO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Fm-ng-Yb4"/>
+                <constraint firstAttribute="trailing" secondItem="lGA-zT-3jq" secondAttribute="trailing" constant="20" id="HO9-gT-epS"/>
+                <constraint firstItem="l8w-8W-EBW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U40-0F-fQV"/>
+                <constraint firstAttribute="trailing" secondItem="G2j-Cg-hwO" secondAttribute="trailing" id="YYy-tX-qGo"/>
+                <constraint firstItem="G2j-Cg-hwO" firstAttribute="top" secondItem="l8w-8W-EBW" secondAttribute="bottom" id="eEO-az-Jzb"/>
+                <constraint firstAttribute="trailing" secondItem="l8w-8W-EBW" secondAttribute="trailing" id="goX-eB-hxl"/>
+                <constraint firstItem="lGA-zT-3jq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="gqe-jy-Cbl"/>
+                <constraint firstItem="l8w-8W-EBW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nbm-jG-GQl"/>
+                <constraint firstItem="lGA-zT-3jq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pyS-nv-199"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic2_profile" width="50" height="50"/>
+    </resources>
+</document>

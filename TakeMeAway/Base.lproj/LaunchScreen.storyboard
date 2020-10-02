@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pow-SQ-hX8">
+                                <rect key="frame" x="112.66666666666669" y="314" width="150" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="X0b-xj-dhX"/>
+                                    <constraint firstAttribute="width" constant="150" id="dgU-lL-O9K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The card-swiping travel inspiration app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW0-e1-KzT">
+                                <rect key="frame" x="19" y="746" width="337" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.34901960780000002" green="0.7725490196" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wordlogo" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-gg-UY1">
+                                <rect key="frame" x="24" y="562" width="327" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="iDQ-Pu-63d"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wVg-gg-UY1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="26P-LR-Cc0"/>
+                            <constraint firstItem="HW0-e1-KzT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2kF-Uo-wzb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="HW0-e1-KzT" secondAttribute="bottom" constant="8" id="9Ui-MP-F3W"/>
+                            <constraint firstItem="pow-SQ-hX8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Kpy-Iw-zFZ"/>
+                            <constraint firstItem="wVg-gg-UY1" firstAttribute="top" secondItem="pow-SQ-hX8" secondAttribute="bottom" constant="64" id="Z42-YH-gmf"/>
+                            <constraint firstItem="wVg-gg-UY1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="bwB-8J-wZY"/>
+                            <constraint firstItem="pow-SQ-hX8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jmP-lF-3uM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wVg-gg-UY1" secondAttribute="trailing" constant="8" id="rep-N9-1cD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="305.17241379310349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="60" height="60"/>
+        <image name="wordlogo" width="172" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="TakeMeAway" customModuleProvider="target">
+            <connections>
+                <outlet property="carouselContainerView" destination="sMg-vt-hxx" id="FEl-A5-eIj"/>
+                <outlet property="closeButton" destination="ktr-Cq-Bi2" id="rdb-3P-q8I"/>
+                <outlet property="pageIndicator" destination="Avl-QO-qVD" id="KHg-H0-wUX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMg-vt-hxx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Avl-QO-qVD">
+                    <rect key="frame" x="168" y="610" width="39" height="37"/>
+                </pageControl>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-Cq-Bi2">
+                    <rect key="frame" x="16" y="16" width="74" height="74"/>
+                    <color key="tintColor" red="0.45490196078431372" green="0.80000000000000004" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" backgroundImage="ic_content_close">
+                        <color key="titleColor" red="0.45490196078431372" green="0.80000000000000004" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sMg-vt-hxx" secondAttribute="bottom" id="H7s-ez-gi7"/>
+                <constraint firstAttribute="bottom" secondItem="Avl-QO-qVD" secondAttribute="bottom" constant="20" id="LjH-DZ-Oj7"/>
+                <constraint firstAttribute="trailing" secondItem="sMg-vt-hxx" secondAttribute="trailing" id="NLU-km-iGs"/>
+                <constraint firstItem="ktr-Cq-Bi2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z1l-2a-gJk"/>
+                <constraint firstItem="sMg-vt-hxx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dGS-OC-Deh"/>
+                <constraint firstItem="sMg-vt-hxx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eTa-Uf-0Mt"/>
+                <constraint firstItem="Avl-QO-qVD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g1F-6a-aPV"/>
+                <constraint firstItem="ktr-Cq-Bi2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="jua-yN-RQL"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_content_close" width="74" height="74"/>
+    </resources>
+</document>
